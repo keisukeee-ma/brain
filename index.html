@@ -2,6 +2,14 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHB0SRRMRF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VHB0SRRMRF');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FROG GOODS</title>
   <meta name="description" content="カエルをモチーフにしたアパレルグッズ">
@@ -53,7 +61,7 @@
       <h2>お問い合わせ</h2>
       <p class="lead">お取り扱い・コラボ・イベント出展のご相談はこちらから。</p>
       <div class="contact">
-        <a href="mailto:ykkm2160m@gmail.com" class="btn">メールで問い合わせる</a>
+        <a href="mailto:ykkm2160m@gmail.com" class="btn" onclick="gtag('event', 'contact_email_click', {contact_method: 'email'});">メールで問い合わせる</a>
       </div>
     </section>
   </main>
